@@ -143,7 +143,7 @@ export default {
     flib: "",
     wt: "",wd: "",wtags: "",wr: "",
     first: false,
-    vvleft: "left"m
+    vvleft: "left",
     vvdur: 4000,
     vvsync: true
   }),
