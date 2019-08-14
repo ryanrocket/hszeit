@@ -106,7 +106,7 @@
               <div class="hga">
                     &lt;meta charset="utf-8"&gt;<br>
                     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>
-                    &lt;base href="/" /&gt;
+                    &lt;base href="/"&gt;<br>
                     &lt;meta name="viewport" content="width=device-width,initial-scale=1.0"&gt;<br>
                     &lt;link rel="icon" href="/favicon.ico"&gt;<br>
                     &lt;title&gt;<span class="klo"></span>&lt;/title&gt;<br> 
