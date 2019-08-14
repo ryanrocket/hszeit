@@ -132,7 +132,7 @@
 <script>
 console.log('Loaded Header Setter v1.6.5 [PRODUCTION MODE]');
 import * as headset from '../assets/headset.js';
-
+setTimeout(function(){this.vvsync = false;}, 4000);
 export default {
   name: 'Main',
   props: ['title', 'useExtHeadset'],
@@ -144,7 +144,7 @@ export default {
     wt: "",wd: "",wtags: "",wr: "",
     first: false,
     vvleft: "left",
-    vvdur: 4000,
+    vvdur: "4000",
     vvsync: true
   }),
   methods: {
