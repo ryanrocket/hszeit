@@ -147,6 +147,9 @@ export default {
     vvsync: true
   }),
   methods: {
+    removeSnackbarQue() {
+      setTimeout((function(){this.vvsync = false;console.log("should execute")})(), 4000);
+    },
     onSelect (items) {
       this.sel = items
     },
@@ -225,10 +228,11 @@ export default {
                 : (function() {})()
         this.sel = [];
     }
+  },
+  created() {
+    this.removeSnackbarQue()
   }
 };
-setTimeout((function(){this.vvsync = false;console.log("should execute")})(), 4000);
-
 console.log("%cHeader Setter is an Open Source Project! Check out the GitHub Below!", "font-size: 20px; color: teal;");
 console.log("%chttps://github.com/ryanrocket/headersetter", "font-size: 16px; color: blue;");
 console.log("\n"); console.log("%cHeader Setter is licensed under the MIT License\nProject by Ryan Wans [ ryanwans.com ]", "font-size: 16px; color: orange;")
