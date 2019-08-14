@@ -48,7 +48,7 @@ $selected-theme: "light";
         }
     }
     .cl {
-        background-color: #3b3b3b;
+        background-color: getThemeColour($selected-theme, 'bgc');
         color: getThemeColour($selected-theme, 'text');
         width: 30%;
         height: 75%;
@@ -129,7 +129,7 @@ $selected-theme: "light";
             #green {color: getThemeColour($selected-theme, 'syntax');}
             font-size: 0.7rem;
             overflow: scroll;
-            color: #dfebf7;
+            color: getThemeColour($selected-theme, 'text');
         }
     }
     .cone {
