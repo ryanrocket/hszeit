@@ -20,5 +20,6 @@ new Vue({
     }
   },
   created() {
+    console['log']("[MAIN] App successfully created");
   }
 }).$mount('#app')
