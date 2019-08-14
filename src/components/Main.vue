@@ -234,7 +234,7 @@ console.log("\n"); console.log("%cHeader Setter is licensed under the MIT Licens
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '../assets/lighttheme.scss';
+@import '../assets/darktheme.scss';
 </style>
 
 <!-- wow im in love with vue <3 -->
