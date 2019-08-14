@@ -4,9 +4,6 @@
       :md-active.sync="first"
       md-content="Your HTML Header Has Been Copied To Clipboard!"
       md-confirm-text="CLOSE" />
-      <md-snackbar :md-position="vvleft" :md-duration=1 :md-active.sync="vvsync" md-persistent>
-      <span>Loaded Header Setter App v1.6.5</span>
-      </md-snackbar>
       <div class="toptitle md-display-3">
           {{ title }}
           <p id="topdesc" class="md-subheading">
@@ -147,9 +144,6 @@ export default {
     vvsync: true
   }),
   methods: {
-    removeSnackbarQue() {
-      setTimeout((function(){this.vvsync = false;console.log("should execute")})(), 4000);
-    },
     onSelect (items) {
       this.sel = items
     },
@@ -230,7 +224,7 @@ export default {
     }
   },
   created() {
-    this.removeSnackbarQue()
+
   }
 };
 console.log("%cHeader Setter is an Open Source Project! Check out the GitHub Below!", "font-size: 20px; color: teal;");
