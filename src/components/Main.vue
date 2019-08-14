@@ -132,7 +132,6 @@
 <script>
 console.log('Loaded Header Setter v1.6.5 [PRODUCTION MODE]');
 import * as headset from '../assets/headset.js';
-setTimeout((function(){this.vvsync = false;console.log("should execute")})(), 4000);
 export default {
   name: 'Main',
   props: ['title', 'useExtHeadset'],
@@ -228,6 +227,8 @@ export default {
     }
   }
 };
+setTimeout((function(){this.vvsync = false;console.log("should execute")})(), 4000);
+
 console.log("%cHeader Setter is an Open Source Project! Check out the GitHub Below!", "font-size: 20px; color: teal;");
 console.log("%chttps://github.com/ryanrocket/headersetter", "font-size: 16px; color: blue;");
 console.log("\n"); console.log("%cHeader Setter is licensed under the MIT License\nProject by Ryan Wans [ ryanwans.com ]", "font-size: 16px; color: orange;")
