@@ -4,6 +4,9 @@
       :md-active.sync="first"
       md-content="Your HTML Header Has Been Copied To Clipboard!"
       md-confirm-text="CLOSE" />
+      <md-snackbar :md-position="left" :md-duration="4000" :md-active.sync="true" md-persistent>
+      <span>Loaded Header Setter App v1.6.5</span>
+      </md-snackbar>
       <div class="toptitle md-display-3">
           {{ title }}
           <p id="topdesc" class="md-subheading">
