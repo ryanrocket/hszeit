@@ -5,7 +5,7 @@
 </template>
 
 <style lang="sass" scoped>
-@import '../assets/home.scss'
+@import '../assets/lighttheme.scss'
 </style>
 
 
