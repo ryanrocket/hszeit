@@ -10,6 +10,11 @@
               Quickly Create Clean, Effective Webpage Headers
           </p>
       </div>
+      <div class="octologo ">
+          <md-tooltip md-direction="left" md-delay="500">Contribute to this project!</md-tooltip>
+          <img id="ol"  onclick="javascript:redir('github')" alt="github-octocat-logo" src="../assets/octo.svg" />
+          
+      </div>
       <!-- expected content insertion goes here -->
       <div class="cl cone md-elevation-8">
           <div class="cltitle">
@@ -123,6 +128,13 @@
               </div>
           </div>
       </div>
+        <script type="application/javascript">
+            let redir = function(to) {
+                (to === 'github') 
+                    ? (function() { window.open("https://github.com/ryanrocket/hszeit", 'Header Setter - GitHub'); })() 
+                    : (function() { console.error("invalid function input"); })
+            }
+        </script>
   </div>
 </template>
 

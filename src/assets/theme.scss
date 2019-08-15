@@ -32,6 +32,23 @@ $selected-theme: "light";
     left: 0;
     color: inherit;
     margin-top: 0;
+        #ol {
+            width: 6em;
+            height: auto;
+            position: absolute;
+            float: right;
+            padding-right: 18px;
+            padding-top: 18px;
+            right: 0;
+            top: 0;
+            opacity: 0.6;
+            filter: hue-rotate(50deg);
+        }
+    md-tooltip {
+        position: absolute;
+        float: right;
+        z-index: 1000;
+    }
     .toptitle {
         padding-top: 10px;
         padding-left: 18px;
