@@ -19,12 +19,10 @@ purge-gitignore:
 	touch .change
 	echo ">] purged || removed .gitignore -> makefile\n" >> .change
 commit:
-	echo "--> Starting Commit Proccess <--"
-	echo "\n-> Adding all new changes"
+	touch .change
+	echo "commit by makefile" >> .change
 	git add -A
-	echo "-> Commit-ing files"
 	git commit -m "Unspecified Changes by Makefile"
-	echo "-> Pushing to branch 'beta'"
 	git push origin master:beta 
 	echo "-> Push Complete"
 
