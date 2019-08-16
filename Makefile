@@ -25,7 +25,7 @@ commit:
 	echo "-> Commit-ing files"
 	git commit -m "Unspecified Changes by Makefile"
 	echo "-> Pushing to branch 'beta'"
-	git push origin beta 
+	git push origin master:beta 
 	echo "-> Push Complete"
 
 define EXE_OBJS
