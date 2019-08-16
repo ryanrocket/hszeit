@@ -1,5 +1,28 @@
+$themes: (
+    'dark': (
+        'text':      #e0f0ff,
+        'desc':      #b8ccde,
+        'bgc':       #4b4b4b,
+        'syntax':    lime
+    ),
+    'light': (
+        'text':     #2c3e50,
+        'desc':     #445c74,
+        'bgc':      #fafafa,
+        'syntax':   green
+    )
+);
+
+$selected-theme: "dark";
+
+@function getThemeColour($key: 'light', $component) {
+    $map: map-get($themes, $key);
+    @return map-get($map, $component);
+}
+
+// BEGIN
 .mainview {
-    color: #e0f0ff;
+    color: getThemeColour($selected-theme, 'text');
     width: 100%;
     height: 100%;
     font-family: Open Sans, sans-serif!important;
@@ -9,23 +32,42 @@
     left: 0;
     color: inherit;
     margin-top: 0;
+        #ol {
+            width: 6em;
+            height: auto;
+            position: absolute;
+            float: right;
+            padding-right: 18px;
+            padding-top: 18px;
+            right: 0;
+            top: 0;
+            opacity: 0.6;
+            filter: invert(100%);
+            color: white;
+        }
+    md-tooltip {
+        position: absolute;
+        float: right;
+        z-index: 1000;
+    }
     .toptitle {
         padding-top: 10px;
         padding-left: 18px;
         font-weight: bold;
         font-size: 2.8rem;
-        color: #e0f0ff!important;
+        color: getThemeColour($selected-theme, 'text')!important;
         width: 50%;
         height: 15%;
         #topdesc {
-            color: #b8ccde!important;
+            color: getThemeColour($selected-theme, 'desc')!important;
             line-height: 18px!important;
             overflow-wrap: break-word;
             margin-top: 6px;
         }
     }
     .cl {
-        background-color: #fafafa;
+        background-color: getThemeColour($selected-theme, 'bgc');
+        color: getThemeColour($selected-theme, 'text');
         width: 30%;
         height: 75%;
         float: left;
@@ -40,7 +82,7 @@
         .cltitle {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #dfebf7!important;
+            color: getThemeColour($selected-theme, 'text')!important;
             padding-left: 8px;
             padding-top: 10px;
             padding-bottom: 8px;
@@ -60,7 +102,7 @@
             }
             .fform {
                 width: 100%!important;
-                background-color: inherit;
+                background-color: getThemeColour($selected-theme, 'bgc')!important;
             }
         } 
         .clbut {
@@ -73,7 +115,7 @@
         }
     }
     .od {
-        background-color: #303030;
+        background-color: getThemeColour($selected-theme, 'bgc');
         width: 60%;
         height: 75%;
         float: right;
@@ -88,7 +130,7 @@
         .odtitle {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #e0f0ff!important;
+            color: getThemeColour($selected-theme, 'text')!important;
             padding-left: 8px;
             padding-top: 10px;
             padding-bottom: 8px;
@@ -102,9 +144,10 @@
             margin-left: 2%;
             margin-right: 2%;
             font-family: 'Courier New', Courier, monospace;
-            #green {color: green;}
+            #green {color: getThemeColour($selected-theme, 'syntax');}
             font-size: 0.7rem;
             overflow: scroll;
+            color: getThemeColour($selected-theme, 'text');
         }
     }
     .cone {
@@ -115,4 +158,10 @@
         visibility: hidden;
     }
 }
-body {background-color: #303030!important;}
+body {background-color: getThemeColour($selected-theme, 'bgc')!important; color: getThemeColour($selected-theme, 'text')!important;}
+// END
+
+// webpack integration
+:export {
+    selected-theme: $selected-theme;
+}
