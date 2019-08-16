@@ -128,11 +128,17 @@
               </div>
           </div>
       </div>
+      <img id="sth" alt="chng theme" src="../assets/theme.svg" onclick="javascript:swthm('dark')" />
         <script type="application/javascript">
             let redir = function(to) {
                 (to === 'github') 
                     ? (function() { window.open("https://github.com/ryanrocket/hszeit", 'Header Setter - GitHub'); })() 
                     : (function() { console.error("invalid function input"); })
+            },
+            swthm = function(thm) {
+                (thm === 'dark')
+                    ? (function() {window.location.href="https://headersetter.us/dark"})()
+                    : (function() {window.location.href="https://headersetter.us/light"})()
             }
         </script>
   </div>
