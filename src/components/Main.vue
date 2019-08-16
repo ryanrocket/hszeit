@@ -129,6 +129,9 @@
           </div>
       </div>
       <img id="sth" alt="chng theme" src="../assets/theme.svg" onclick="javascript:swthm('dark')" />
+      <div class="madewith">
+                  Made with <span id="spew"><img class="hgy" alt="heart" src="../assets/octicon-heart.svg" /></span> by Ryan Wans
+              </div>
         <script type="application/javascript">
             let redir = function(to) {
                 (to === 'github') 
