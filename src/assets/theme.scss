@@ -32,6 +32,14 @@ $selected-theme: "light";
     left: 0;
     color: inherit;
     margin-top: 0;
+    #sth {
+        position: absolute;
+        width: 34px;
+        height: auto;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        bottom: 0;
+    }
         #ol {
             width: 6em;
             height: auto;
