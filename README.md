@@ -4,10 +4,10 @@
 ## Starting // Run
 It's the same as any other node/vue application.
 
-`npm run serve`\n
+`npm run serve`<br />
 This will run the web serve on port 9000
 
 ## For Contributers
-I included a Makefile to make procedures easier.
-`make commit` will commit all changes to the beta branch
-`make purge-modules` will remove the node_modules if it exists
+I included a Makefile to make procedures easier.<br />
+`make commit` will commit all changes to the beta branch<br />
+`make purge-modules` will remove the node_modules if it exists<br />
