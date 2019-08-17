@@ -1,4 +1,4 @@
-# Header Setter ##.us
+# Header Setter .us
 ### Progressive Web Application For Creating Clean HTML Head's
 
 ## Starting // Run
