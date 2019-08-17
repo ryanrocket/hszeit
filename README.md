@@ -4,7 +4,7 @@
 ## Starting // Run
 It's the same as any other node/vue application.
 
-`npm run serve`
+`npm run serve`\n
 This will run the web serve on port 9000
 
 ## For Contributers
