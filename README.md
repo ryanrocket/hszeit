@@ -1,4 +1,4 @@
-# Header Setter <b>.us</b>
+# Header Setter ##.us
 ### Progressive Web Application For Creating Clean HTML Head's
 
 ## Starting // Run
