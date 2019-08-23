@@ -25,6 +25,13 @@ commit:
 	git commit -m "Unspecified Changes by Makefile"
 	git push origin master:beta 
 	echo "-> Push Complete"
+commit-master:
+	touch .change
+	echo "commit by makefile" >> .change
+	git add -A
+	git commit -m "Unspecified Changes by Makefile"
+	git push origin master
+	echo "-> Push Complete"
 
 define EXE_OBJS
 	$(patsubst %, %.o, $(1)) $(patsubst %, $(BIN_DIR)/%.o, $(2))
