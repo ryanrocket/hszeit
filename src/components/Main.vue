@@ -130,7 +130,7 @@
       </div>
       <img id="sth" alt="chng theme" src="../assets/theme.svg" onclick="javascript:swthm('dark')" />
       <div class="madewith">
-                  Made with <span id="spew"><img class="hgy" alt="heart" src="../assets/octicon-heart.svg" /></span> by Ryan Wans
+                  Made with <span id="spew"><img class="hgy" alt="heart" src="../assets/octicon-heart.svg" /></span> by <a target="_blank" href="https://ryanwans.com?ref=hs" id="aa">Ryan Wans</a>
               </div>
         <script type="application/javascript">
             let redir = function(to) {
