@@ -129,6 +129,8 @@
           </div>
       </div>
               <img id="sth" alt="chng theme" src="../assets/theme.svg" onclick="javascript:swthm('light')" />
+                    <a href="/about" id="sths">About Header Setter </a>
+
               <div class="madewith">
                   Made with <span id="spew"><img class="hgy" alt="heart" src="../assets/octicon-heart.svg" /></span> by <a target="_blank" href="https://instagram.com/ryanwans?ref=hs" id="aa">Ryan Wans</a>
               </div>

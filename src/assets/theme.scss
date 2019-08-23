@@ -38,7 +38,7 @@ $selected-theme: "light";
         right: 0;
         width: 40%;
         color: getThemeColour($selected-theme, 'darker');
-        position: absolute;
+        position: fixed;
         padding-right: 10px;
         padding-bottom: 18px;
         text-align: right;
@@ -50,12 +50,29 @@ $selected-theme: "light";
         }
     }
     #sth {
-        position: absolute;
+        position: fixed;
         width: 34px;
         height: auto;
         padding-left: 10px;
         padding-bottom: 10px;
         bottom: 0;
+    } #sths {
+        position: fixed;
+        width: 250px;
+        height: auto;
+        bottom: 0;
+        padding-bottom: 10px;
+        margin-left: 50px;
+        text-align: right;
+    }
+    #sthss {
+        position: fixed;
+        width: 150px;
+        height: auto;
+        bottom: 0;
+        padding-bottom: 10px;
+        margin-left: 50px;
+        text-align: right;
     }
         #ol {
             width: 6em;
@@ -180,6 +197,15 @@ $selected-theme: "light";
         visibility: hidden;
     } .cthree {
         visibility: hidden;
+    }
+    .mcon {
+        padding-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: 0.8px;
+        font-weight: 200;
     }
 }
 body {background-color: getThemeColour($selected-theme, 'bgc')!important; color: getThemeColour($selected-theme, 'text')!important;}
