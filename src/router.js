@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Dark from './views/Dark.vue'
 import About from './views/About.vue';
+import Robots from './views/Robots.vue';
 import 'vue-material/dist/theme/default.css'
 
 Vue.use(Router)
@@ -28,6 +29,11 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/robots.txt',
+      name: 'robots',
+      component: Robots
     },
     {
       path: '*',
