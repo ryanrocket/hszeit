@@ -6,9 +6,9 @@
       md-confirm-text="CLOSE" />
       <div class="toptitle md-display-3">
           {{ title }}
-          <p id="topdesc" class="md-subheading">
+          <h2 id="topdesc" class="md-subheading">
               Quickly Create Clean, Effective Webpage Headers
-          </p>
+          </h2>
       </div>
       <div class="octologo ">
           <md-tooltip md-direction="left" md-delay="500">Contribute to this project!</md-tooltip>
@@ -131,7 +131,7 @@
       <img id="sth" alt="chng theme" src="../assets/theme.svg" onclick="javascript:swthm('dark')" />
       <a href="/about" id="sths">About Header Setter </a>
       <div class="madewith">
-                  Made with <span id="spew"><img class="hgy" alt="heart" src="../assets/octicon-heart.svg" /></span> by <a target="_blank" href="https://ryanwans.com?ref=hs" id="aa">Ryan Wans</a>
+                  Made with <span id="spew"><img class="hgy" alt="heart" src="../assets/octicon-heart.svg" /></span> by <a rel=noreferrer target="_blank" href="https://ryanwans.com?ref=hs" id="aa">Ryan Wans</a>
               </div>
         <script type="application/javascript">
             let redir = function(to) {
