@@ -55,7 +55,7 @@ $selected-theme: "dark";
         position: fixed;
         width: 34px;
         height: auto;
-        padding-left: 10px;
+        margin-left: 10px;
         padding-bottom: 10px;
         bottom: 0;
         filter: invert(100%)
@@ -65,7 +65,7 @@ $selected-theme: "dark";
         height: auto;
         bottom: 0;
         padding-bottom: 10px;
-        padding-left: 50px;
+        margin-left: 50px;
         text-align: right;
     }
         #ol {
