@@ -10,11 +10,23 @@
               Quickly Create Clean, Effective Webpage Headers
           </h2>
       </div>
+
+
+      <!--
       <div class="octologo ">
           <md-tooltip md-direction="left" md-delay="500">Contribute to this project!</md-tooltip>
           <img id="ol"  onclick="javascript:redir('github')" alt="github-octocat-logo" src="../assets/octo.svg" />
           
       </div>
+      -->
+
+      <div advert class="examplead">
+          <!-- THIS IS A REPLICA!! -->
+          <md-tooltip md-direction="left" md-delay="100">Check Header Setter Out! (This is a Replica)</md-tooltip>
+
+          <img src="../assets/HeaderSetterAdvert.png" alt="UNLD -> Check Out Header Setter!" class="adimg" />
+      </div>
+
       <!-- expected content insertion goes here -->
       <div class="cl cone md-elevation-8">
           <div class="cltitle">

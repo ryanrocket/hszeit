@@ -120,7 +120,7 @@ $selected-theme: "light";
         border-color: #7f98b3;
         border-radius: 16px;
         margin-left: 18px;
-        margin-top: 10px;
+        margin-top: 20px;
         .cltitle {
             font-size: 1.3rem;
             font-weight: bold;
@@ -169,7 +169,7 @@ $selected-theme: "light";
         border-color: #7f98b3;
         border-radius: 16px;
         margin-right: 18px;
-        margin-top: 10px;
+        margin-top: 20px;
         .odtitle {
             font-size: 1.3rem;
             font-weight: bold;
@@ -211,6 +211,23 @@ $selected-theme: "light";
     }
 }
 body {background-color: getThemeColour($selected-theme, 'bgc')!important; color: getThemeColour($selected-theme, 'text')!important;}
+
+[advert] {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+            float: right;
+            margin-right: 18px;
+            margin-top: 12px;
+            right: 0;
+            top: 0;
+    .adimg {
+        height: 98px!important;
+    }
+}
+
 // END
 
 // webpack integration
