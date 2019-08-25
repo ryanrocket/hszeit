@@ -6,6 +6,7 @@ import Home from './views/Home.vue'
 import Dark from './views/Dark.vue'
 import About from './views/About.vue';
 import Robots from './views/Robots.vue';
+import Sitemap from './views/Sitemap.vue';
 import 'vue-material/dist/theme/default.css'
 
 Vue.use(Router)
@@ -34,6 +35,11 @@ export default new Router({
       path: '/robots.txt',
       name: 'robots',
       component: Robots
+    },
+    {
+      path: '/sitemap.xml',
+      name: 'sitemap',
+      component: Sitemap
     },
     {
       path: '*',
