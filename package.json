@@ -15,7 +15,7 @@
     "vue-router": "^3.0.3"
   },
   "devDependencies": {
-    "@vue/cli-service": "^3.10.0",
+    "@vue/cli-service": "^5.0.8",
     "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
     "node-sass": "^4.12.0",
